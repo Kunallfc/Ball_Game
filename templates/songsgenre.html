@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+<title>
+Genres
+</title>
+<body>
+
+<center> 
+<table id = 'my' border="5">
+ 			<tr>
+ 				
+ 				 				
+ 				
+            Track Genres!! 
+                  
+
+ 			</tr>
+ 			<br><br>
+ 			{% for dx in data %}
+ 			<tr>
+ 				
+
+ 				<td>({{dx.genres}})</td>
+ 		            
+
+
+ 			</tr>
+ 			{% endfor %}
+
+</table>
+
+<br><br><br>
+<button id='addtrack'>ADD NEW Genres</button>
+</center> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>	
+<script type="text/javascript" src='{% static "js/genres.js" %}'></script>
+
+</body>
+</html>
